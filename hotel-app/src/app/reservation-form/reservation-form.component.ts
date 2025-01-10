@@ -28,10 +28,10 @@ export class ReservationFormComponent implements OnInit {
       roomNumber: ["", Validators.required],
     });
 
-    let id = this.activatedRoute.snapshot.paramMap.get("id");
+    const id = this.activatedRoute.snapshot.paramMap.get("id");
 
     if (id) {
-      let reservation = this.reservationService.getReservation(id);
+      const reservation = this.reservationService.getReservation(id);
       if (reservation) {
         this.reservationForm.patchValue(reservation);
       }
@@ -39,9 +39,9 @@ export class ReservationFormComponent implements OnInit {
   }
   onSubmit() {
     if (this.reservationForm.valid) {
-      let reservation: Reservation = this.reservationForm.value;
+      const reservation: Reservation = this.reservationForm.value;
 
-      let id = this.activatedRoute.snapshot.paramMap.get("id");
+      const id = this.activatedRoute.snapshot.paramMap.get("id");
 
       if (id) {
         this.reservationService.updateReservation(id, reservation);

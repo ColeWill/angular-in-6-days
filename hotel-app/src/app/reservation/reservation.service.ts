@@ -28,13 +28,13 @@ export class ReservationService {
   }
 
   deleteReservation(id: string): void {
-    let index = this.reservations.findIndex((res) => res.id === id);
+    const index = this.reservations.findIndex((res) => res.id === id);
     this.reservations.splice(index, 1);
     localStorage.setItem('reservations', JSON.stringify(this.reservations));
   }
 
   updateReservation(id: string, updatedReservation: Reservation): void {
-    let index = this.reservations.findIndex((res) => res.id === id);
+    const index = this.reservations.findIndex((res) => res.id === id);
     this.reservations[index] = updatedReservation;
     localStorage.setItem('reservations', JSON.stringify(this.reservations));
   }
