@@ -6,6 +6,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { ProductModule } from './product/product/product.module';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -18,6 +21,8 @@ import { ProductModule } from './product/product/product.module';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
