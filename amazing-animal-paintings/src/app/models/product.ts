@@ -1,6 +1,6 @@
 export class Product {
-    id: number = 0;
-    name: string = "";
-    price: number = 0;
-    image_url: string = "";
+    id = 0;
+    name = "";
+    price = 0;
+    image_url = "";
 }

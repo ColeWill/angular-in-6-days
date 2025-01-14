@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import { Product } from 'src/app/models/product';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-product-list',

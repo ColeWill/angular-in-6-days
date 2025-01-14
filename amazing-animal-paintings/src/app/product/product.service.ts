@@ -12,8 +12,6 @@ export class ProductService {
 
   private apiUrl = environment.apiUrl + "/products";
   getProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>(this.apiUrl).pipe(
-      tap((data) => console.log('Received products:', data))
-    );
+    return this.http.get<Product[]>(this.apiUrl);
   }
 }
