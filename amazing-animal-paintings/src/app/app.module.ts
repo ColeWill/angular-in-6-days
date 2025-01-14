@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ProductModule } from './product/product/product.module';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { CartModule } from './cart/cart.module';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { MatButtonModule } from '@angular/material/button';
   ],
   imports: [
     ProductModule,
+    CartModule,
     
     BrowserModule,
     AppRoutingModule,
